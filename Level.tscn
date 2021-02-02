@@ -64,14 +64,17 @@ mesh = SubResource( 2 )
 material/0 = ExtResource( 2 )
 
 [node name="ViewportContainer" type="ViewportContainer" parent="."]
+margin_right = 84.0
+margin_bottom = 48.0
 rect_scale = Vector2( 8, 8 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Viewport" type="Viewport" parent="ViewportContainer"]
-size = Vector2( 80, 45 )
+size = Vector2( 84, 48 )
 handle_input_locally = false
+render_target_update_mode = 3
 
 [node name="Camera" type="Camera" parent="ViewportContainer/Viewport"]
 transform = Transform( 0.642788, -0.541675, 0.541675, 0, 0.707107, 0.707107, -0.766044, -0.454519, 0.454519, 5, 9, 5 )

@@ -15,14 +15,14 @@ _global_script_class_icons={
 
 [application]
 
-config/name="nokiaJamTest"
+config/name="LostInTheStorm"
 run/main_scene="res://Level.tscn"
 config/icon="res://icon.png"
 
 [display]
 
-window/size/width=640
-window/size/height=360
+window/size/width=672
+window/size/height=384
 window/size/resizable=false
 
 [rendering]
