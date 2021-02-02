@@ -1,0 +1,81 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Spatial.gd" type="Script" id=1]
+[ext_resource path="res://Materials/claire.tres" type="Material" id=2]
+
+[sub_resource type="PlaneMesh" id=1]
+
+[sub_resource type="CubeMesh" id=2]
+
+[sub_resource type="Environment" id=3]
+background_mode = 3
+background_color = Color( 0.262745, 0.321569, 0.239216, 1 )
+background_energy = 0.0
+ambient_light_color = Color( 0.780392, 0.941176, 0.847059, 1 )
+
+[node name="Level" type="Spatial"]
+
+[node name="Spatial" type="Spatial" parent="."]
+script = ExtResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Spatial"]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0 )
+mesh = SubResource( 1 )
+material/0 = ExtResource( 2 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1, -4 )
+mesh = SubResource( 2 )
+material/0 = ExtResource( 2 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1, -2 )
+mesh = SubResource( 2 )
+material/0 = ExtResource( 2 )
+
+[node name="MeshInstance4" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1, 0 )
+mesh = SubResource( 2 )
+material/0 = ExtResource( 2 )
+
+[node name="MeshInstance5" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1, 2 )
+mesh = SubResource( 2 )
+material/0 = ExtResource( 2 )
+
+[node name="MeshInstance6" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1, 4 )
+mesh = SubResource( 2 )
+material/0 = ExtResource( 2 )
+
+[node name="MeshInstance7" type="MeshInstance" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, -4 )
+mesh = SubResource( 2 )
+material/0 = ExtResource( 2 )
+
+[node name="MeshInstance8" type="MeshInstance" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0 )
+mesh = SubResource( 2 )
+material/0 = ExtResource( 2 )
+
+[node name="MeshInstance9" type="MeshInstance" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 4 )
+mesh = SubResource( 2 )
+material/0 = ExtResource( 2 )
+
+[node name="ViewportContainer" type="ViewportContainer" parent="."]
+rect_scale = Vector2( 8, 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Viewport" type="Viewport" parent="ViewportContainer"]
+size = Vector2( 80, 45 )
+handle_input_locally = false
+
+[node name="Camera" type="Camera" parent="ViewportContainer/Viewport"]
+transform = Transform( 0.642788, -0.541675, 0.541675, 0, 0.707107, 0.707107, -0.766044, -0.454519, 0.454519, 5, 9, 5 )
+environment = SubResource( 3 )
+projection = 1
+size = 8.0
+near = 0.5
