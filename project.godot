@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="LostInTheStorm"
-run/main_scene="res://Level.tscn"
+run/main_scene="res://Levels/MainLevels.tscn"
 config/icon="res://icon.png"
 
 [display]
