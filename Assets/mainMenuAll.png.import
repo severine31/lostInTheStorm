@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tableauDebutCapitaine.png-8acd2edff3dbad039d57bc0d15ab7c06.stex"
+path="res://.import/mainMenuAll.png-de91d27a21cfd0a61b444f00710e2567.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/tableauDebutCapitaine.png"
-dest_files=[ "res://.import/tableauDebutCapitaine.png-8acd2edff3dbad039d57bc0d15ab7c06.stex" ]
+source_file="res://Assets/mainMenuAll.png"
+dest_files=[ "res://.import/mainMenuAll.png-de91d27a21cfd0a61b444f00710e2567.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -30,5 +30,5 @@ process/HDR_as_SRGB=false
 process/invert_color=false
 stream=false
 size_limit=0
-detect_3d=false
+detect_3d=true
 svg/scale=1.0

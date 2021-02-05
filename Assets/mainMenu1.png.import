@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tableauDebutCapitaine.png-8acd2edff3dbad039d57bc0d15ab7c06.stex"
+path="res://.import/mainMenu1.png-390d906c74facfa4179b5a60944140a9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/tableauDebutCapitaine.png"
-dest_files=[ "res://.import/tableauDebutCapitaine.png-8acd2edff3dbad039d57bc0d15ab7c06.stex" ]
+source_file="res://Assets/mainMenu1.png"
+dest_files=[ "res://.import/mainMenu1.png-390d906c74facfa4179b5a60944140a9.stex" ]
 
 [params]
 
