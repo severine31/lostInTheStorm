@@ -2,7 +2,9 @@ extends KinematicBody2D
 
 var velocity: Vector2 = Vector2()
 var sprite: AnimatedSprite
-var SPEED = 200
+var JUMP = 6000
+var SPEED = 400
+var GRAVITY = 0.01
 
 func _ready():
 	sprite = $AnimatedSprite
@@ -10,7 +12,13 @@ func _ready():
 func _physics_process(delta):
 	get_input(delta)
 	velocity = velocity.normalized() * SPEED
-	move_and_slide(velocity)
+	if !is_on_floor():
+		sprite.set_animation("jump")
+	if Input.is_action_pressed("ui_up") and is_on_floor():
+		velocity.y += -JUMP
+	else:
+		velocity.y += SPEED
+	move_and_slide(velocity, Vector2(0,-1))
 
 func get_input(delate):
 	velocity = Vector2()
