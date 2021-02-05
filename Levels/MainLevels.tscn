@@ -1,7 +1,7 @@
 [gd_scene load_steps=40 format=2]
 
-[ext_resource path="res://Assets/Piece_2portes_droite.png" type="Texture" id=1]
-[ext_resource path="res://Assets/Lustre.png" type="Texture" id=2]
+[ext_resource path="res://Assets/piece2portesDroite.png" type="Texture" id=1]
+[ext_resource path="res://Assets/lustre.png" type="Texture" id=2]
 [ext_resource path="res://Entities/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/texture_type2.png" type="Texture" id=4]
 [ext_resource path="res://Assets/Hublot.png" type="Texture" id=5]
@@ -171,6 +171,7 @@ animations = [ {
 [node name="MainLevels" type="Node2D"]
 
 [node name="Room" type="Sprite" parent="."]
+position = Vector2( 1, 0 )
 scale = Vector2( 8, 8 )
 texture = ExtResource( 1 )
 
