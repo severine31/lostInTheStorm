@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/hublot.png-1cf3ca1f62b503695f3ddf2d5e36c186.stex"
+path="res://.import/Hublot.png-087d44f1f21d645c94a35e6d79cd21d4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/hublot.png"
-dest_files=[ "res://.import/hublot.png-1cf3ca1f62b503695f3ddf2d5e36c186.stex" ]
+source_file="res://Assets/Hublot.png"
+dest_files=[ "res://.import/Hublot.png-087d44f1f21d645c94a35e6d79cd21d4.stex" ]
 
 [params]
 

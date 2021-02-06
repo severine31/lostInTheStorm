@@ -69,7 +69,7 @@ region = Rect2( 504, 48, 84, 48 )
 atlas = ExtResource( 2 )
 region = Rect2( 588, 48, 84, 48 )
 
-[sub_resource type="SpriteFrames" id=25]
+[sub_resource type="SpriteFrames" id=17]
 animations = [ {
 "frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ) ],
 "loop": false,
@@ -77,47 +77,47 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="AtlasTexture" id=26]
+[sub_resource type="AtlasTexture" id=18]
 atlas = ExtResource( 1 )
 region = Rect2( 0, 0, 84, 48 )
 
-[sub_resource type="AtlasTexture" id=27]
+[sub_resource type="AtlasTexture" id=19]
 atlas = ExtResource( 1 )
 region = Rect2( 84, 0, 84, 48 )
 
-[sub_resource type="AtlasTexture" id=28]
+[sub_resource type="AtlasTexture" id=20]
 atlas = ExtResource( 1 )
 region = Rect2( 168, 0, 84, 48 )
 
-[sub_resource type="AtlasTexture" id=29]
+[sub_resource type="AtlasTexture" id=21]
 atlas = ExtResource( 1 )
 region = Rect2( 252, 0, 84, 48 )
 
-[sub_resource type="AtlasTexture" id=30]
+[sub_resource type="AtlasTexture" id=22]
 atlas = ExtResource( 1 )
 region = Rect2( 336, 0, 84, 48 )
 
-[sub_resource type="AtlasTexture" id=31]
+[sub_resource type="AtlasTexture" id=23]
 atlas = ExtResource( 1 )
 region = Rect2( 420, 0, 84, 48 )
 
-[sub_resource type="AtlasTexture" id=32]
+[sub_resource type="AtlasTexture" id=24]
 atlas = ExtResource( 1 )
 region = Rect2( 504, 0, 84, 48 )
 
-[sub_resource type="AtlasTexture" id=33]
+[sub_resource type="AtlasTexture" id=25]
 atlas = ExtResource( 1 )
 region = Rect2( 588, 0, 84, 48 )
 
-[sub_resource type="SpriteFrames" id=34]
+[sub_resource type="SpriteFrames" id=26]
 animations = [ {
-"frames": [ SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ) ],
+"frames": [ SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ) ],
 "loop": true,
 "name": "default",
 "speed": 9.0
 } ]
 
-[sub_resource type="DynamicFont" id=35]
+[sub_resource type="DynamicFont" id=27]
 size = 43
 font_data = ExtResource( 4 )
 
@@ -129,12 +129,12 @@ script = ExtResource( 3 )
 [node name="LostIn" type="AnimatedSprite" parent="Animation"]
 visible = false
 scale = Vector2( 8, 8 )
-frames = SubResource( 25 )
+frames = SubResource( 17 )
 
 [node name="Boat" type="AnimatedSprite" parent="Animation"]
 visible = false
 scale = Vector2( 8, 8 )
-frames = SubResource( 34 )
+frames = SubResource( 26 )
 frame = 3
 
 [node name="Label" type="Label" parent="Animation"]
@@ -143,7 +143,7 @@ margin_left = 36.0
 margin_top = 125.0
 margin_right = 49.0
 margin_bottom = 14.0
-custom_fonts/font = SubResource( 35 )
+custom_fonts/font = SubResource( 27 )
 custom_colors/font_color = Color( 0.262745, 0.321569, 0.239216, 1 )
 text = "Press  Enter"
 align = 1
