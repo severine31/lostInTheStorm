@@ -118,7 +118,7 @@ animations = [ {
 } ]
 
 [sub_resource type="DynamicFont" id=27]
-size = 81
+size = 43
 font_data = ExtResource( 4 )
 
 [node name="MainMenu" type="Node2D"]
@@ -136,10 +136,11 @@ frames = SubResource( 26 )
 frame = 3
 
 [node name="Label" type="Label" parent="Animation"]
-margin_left = 40.0
-margin_top = 104.0
-margin_right = 211.0
-margin_bottom = 174.0
+visible = false
+margin_left = 36.0
+margin_top = 125.0
+margin_right = 49.0
+margin_bottom = 14.0
 custom_fonts/font = SubResource( 27 )
 custom_colors/font_color = Color( 0.262745, 0.321569, 0.239216, 1 )
 text = "Enter"
