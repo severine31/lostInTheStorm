@@ -32,3 +32,7 @@ func get_input(delate):
 		sprite.flip_h = false
 	else:
 		sprite.set_animation("idle")
+
+
+func _on_Area2D_body_entered(body):
+	print("louleds")

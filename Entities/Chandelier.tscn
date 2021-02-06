@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Assets/Lustre.png" type="Texture" id=1]
+[ext_resource path="res://Entities/Chandelier.gd" type="Script" id=2]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )
@@ -42,10 +43,34 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="Chandelier" type="AnimatedSprite"]
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 5.28661, 4.01466 )
+
+[node name="Chandelier" type="RigidBody2D"]
+mass = 10.0
+script = ExtResource( 2 )
+
+[node name="Chandelier" type="AnimatedSprite" parent="."]
 position = Vector2( 0.0700989, -63.1551 )
 scale = Vector2( 8, 8 )
 frames = SubResource( 9 )
-frame = 4
+frame = 7
 playing = true
 offset = Vector2( -0.0982647, 13.5963 )
+
+[node name="RayUn" type="RayCast2D" parent="Chandelier"]
+position = Vector2( 0, 23.5 )
+rotation = -0.261799
+enabled = true
+cast_to = Vector2( 0, 20 )
+
+[node name="RayDeux" type="RayCast2D" parent="Chandelier"]
+position = Vector2( 0, 23.5 )
+rotation = 0.261799
+enabled = true
+cast_to = Vector2( 0, 20 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.0700989, -1.7245 )
+scale = Vector2( 8, 8 )
+shape = SubResource( 10 )

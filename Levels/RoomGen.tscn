@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Assets/piece2portesDroite.png" type="Texture" id=1]
 [ext_resource path="res://Assets/piece1porteGDroite.png" type="Texture" id=2]
@@ -22,10 +22,6 @@ animations = [ {
 "name": "right_door",
 "speed": 5.0
 } ]
-
-[sub_resource type="CapsuleShape2D" id=2]
-radius = 36.825
-height = 179.959
 
 [node name="RoomGen" type="Node2D"]
 script = ExtResource( 4 )
@@ -55,18 +51,18 @@ position = Vector2( 175, -50 )
 [node name="ChandelPositions" type="Node2D" parent="."]
 
 [node name="pos1" type="Position2D" parent="ChandelPositions"]
-position = Vector2( -50, -180 )
+position = Vector2( -50, -170 )
 
 [node name="pos2" type="Position2D" parent="ChandelPositions"]
-position = Vector2( 170, -180 )
+position = Vector2( 170, -170 )
 
 [node name="HolePositions" type="Node2D" parent="."]
 
 [node name="pos1" type="Position2D" parent="HolePositions"]
-position = Vector2( -120, 155 )
+position = Vector2( -120, 200 )
 
 [node name="pos2" type="Position2D" parent="HolePositions"]
-position = Vector2( 120, 156.189 )
+position = Vector2( 120, 200 )
 
 [node name="BonusPositions" type="Node2D" parent="."]
 
@@ -75,19 +71,3 @@ position = Vector2( -215, 85 )
 
 [node name="pos2" type="Position2D" parent="BonusPositions"]
 position = Vector2( 215, 85 )
-
-[node name="DoorsPositions" type="Node2D" parent="."]
-
-[node name="door1" type="Area2D" parent="DoorsPositions"]
-position = Vector2( -325.269, 89.8026 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="DoorsPositions/door1"]
-position = Vector2( 24.7488, -26.1629 )
-shape = SubResource( 2 )
-
-[node name="door2" type="Area2D" parent="DoorsPositions"]
-position = Vector2( 271.529, 89.8026 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="DoorsPositions/door2"]
-position = Vector2( 24.7488, -26.1629 )
-shape = SubResource( 2 )
