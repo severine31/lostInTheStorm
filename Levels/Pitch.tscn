@@ -98,7 +98,7 @@ animations = [ {
 } ]
 
 [sub_resource type="DynamicFont" id=23]
-size = 43
+size = 92
 font_data = ExtResource( 3 )
 
 [sub_resource type="AtlasTexture" id=24]
@@ -123,17 +123,15 @@ animations = [ {
 script = ExtResource( 2 )
 
 [node name="Capitaine" type="AnimatedSprite" parent="Animation"]
-visible = false
 scale = Vector2( 8, 8 )
 frames = SubResource( 22 )
 frame = 17
 
 [node name="TextCapitaine" type="RichTextLabel" parent="Animation"]
-visible = false
 margin_left = 33.0
-margin_top = -169.0
-margin_right = 305.0
-margin_bottom = -33.0
+margin_top = -180.0
+margin_right = 331.0
+margin_bottom = 113.0
 hint_tooltip = "Hey mate, the situation is critical... We are in the middle of storm and"
 custom_fonts/normal_font = SubResource( 23 )
 custom_colors/default_color = Color( 0.262745, 0.321569, 0.239216, 1 )
@@ -150,7 +148,7 @@ frames = SubResource( 26 )
 frame = 1
 
 [node name="Timer" type="Timer" parent="Animation"]
-wait_time = 5.0
+wait_time = 2.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true

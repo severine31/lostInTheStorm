@@ -28,7 +28,7 @@ animations = [ {
 } ]
 
 [sub_resource type="DynamicFont" id=6]
-size = 47
+size = 92
 outline_color = Color( 0.262745, 0.321569, 0.239216, 1 )
 font_data = ExtResource( 2 )
 
@@ -37,20 +37,20 @@ font_data = ExtResource( 2 )
 [node name="Mother" type="AnimatedSprite" parent="."]
 scale = Vector2( 8, 8 )
 frames = SubResource( 5 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="Label" type="Label" parent="."]
-margin_left = 52.9897
-margin_top = -128.541
-margin_right = 335.99
-margin_bottom = 92.4593
+margin_left = 76.0
+margin_top = -157.0
+margin_right = 316.0
+margin_bottom = 152.0
 custom_fonts/font = SubResource( 6 )
 custom_colors/font_color = Color( 0.262745, 0.321569, 0.239216, 1 )
 text = "Thank you for your help !
-I'll never forget you
 "
 autowrap = true
+max_lines_visible = 4
 __meta__ = {
 "_edit_use_anchors_": false
 }
