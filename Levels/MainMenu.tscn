@@ -118,7 +118,7 @@ animations = [ {
 } ]
 
 [sub_resource type="DynamicFont" id=27]
-size = 43
+size = 81
 font_data = ExtResource( 4 )
 
 [node name="MainMenu" type="Node2D"]
@@ -127,10 +127,12 @@ font_data = ExtResource( 4 )
 script = ExtResource( 3 )
 
 [node name="LostIn" type="AnimatedSprite" parent="Animation"]
+visible = false
 scale = Vector2( 8, 8 )
 frames = SubResource( 17 )
 
 [node name="Boat" type="AnimatedSprite" parent="Animation"]
+visible = false
 scale = Vector2( 8, 8 )
 frames = SubResource( 26 )
 frame = 3
@@ -138,7 +140,7 @@ frame = 3
 [node name="Label" type="Label" parent="Animation"]
 visible = false
 margin_left = 36.0
-margin_top = 125.0
+margin_top = 107.0
 margin_right = 49.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 27 )
