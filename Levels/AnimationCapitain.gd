@@ -1,12 +1,16 @@
 extends Node2D
 
 var arr = [
-	"Hey mate, the situation is critical...",
-	"We are in the middle of storm and we have to evacuate the boat.",
-	"But a baby is lost in the boat...",
-	"We have to find him before leaving !",
-	"Help us, find the baby !",
-	"Be carefull, the storm has damaged the boat..."
+	"Hey mate,",
+	"the situation is critical...",
+	"We are in the middle of storm",
+	"We've to leave the boat.",
+	"But a baby is lost...",
+	"We've to find him",
+	"Please,",
+	"find the baby !",
+	"Be carefull,",
+	"boat is damaged..."
 ]
 var text: RichTextLabel
 var captain: AnimatedSprite
@@ -28,14 +32,15 @@ func _ready():
 	timer.start()
 	
 func _process(delta):
-	if iteration == 3:
-		baby.visible = true
-		baby.play("default")
-	
-	if iteration == 6:
+	if iteration <= arr.size():
+		if arr[iteration-1] == "But a baby is lost...":
+			baby.visible = true
+			baby.play("default")
+	else: 
 		get_tree().change_scene("res://Levels/MainLevels.tscn")
 
 func _on_Timer_timeout():
-	text.text = arr[iteration]
+	if iteration < arr.size():
+		text.text = arr[iteration]
 	iteration = iteration + 1
 	timer.start()

@@ -127,12 +127,10 @@ font_data = ExtResource( 4 )
 script = ExtResource( 3 )
 
 [node name="LostIn" type="AnimatedSprite" parent="Animation"]
-visible = false
 scale = Vector2( 8, 8 )
 frames = SubResource( 17 )
 
 [node name="Boat" type="AnimatedSprite" parent="Animation"]
-visible = false
 scale = Vector2( 8, 8 )
 frames = SubResource( 26 )
 frame = 3
@@ -145,7 +143,7 @@ margin_right = 49.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 27 )
 custom_colors/font_color = Color( 0.262745, 0.321569, 0.239216, 1 )
-text = "Press  Enter"
+text = "Enter"
 align = 1
 valign = 1
 __meta__ = {

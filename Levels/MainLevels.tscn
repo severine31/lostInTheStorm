@@ -2,8 +2,6 @@
 
 [ext_resource path="res://Assets/Lustre.png" type="Texture" id=2]
 [ext_resource path="res://Entities/Player.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Assets/texture_type2.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Hublot.png" type="Texture" id=5]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
@@ -176,7 +174,7 @@ current = true
 position = Vector2( 0, -120 )
 scale = Vector2( 5, 5 )
 frames = SubResource( 9 )
-frame = 6
+frame = 7
 playing = true
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
