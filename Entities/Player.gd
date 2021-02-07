@@ -33,6 +33,9 @@ func get_input(delate):
 	else:
 		sprite.set_animation("idle")
 
-
-func _on_Area2D_body_entered(body):
-	print("louleds")
+func _on_HintArea_body_entered(body):
+	print(body)
+	if body.name == "Chandelier":
+		print("loose life chandle")
+	if body.name == "Hole":
+		print("loose life Hole")
