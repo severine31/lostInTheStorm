@@ -2,10 +2,12 @@ extends RigidBody2D
 
 var ray_one : RayCast2D
 var ray_two : RayCast2D
+var sprite : AnimatedSprite
 
 func _ready():
 	ray_one = $Chandelier/RayUn
 	ray_two = $Chandelier/RayDeux
+	sprite = $Chandelier
 	gravity_scale = 0
 
 func _physics_process(delta):
@@ -21,5 +23,6 @@ func _physics_process(delta):
 				go_down()
 				
 func go_down():
-	gravity_scale = 4
+	gravity_scale = 15
+	sprite.stop()
 	add_force(Vector2(0,2), Vector2(0,2))

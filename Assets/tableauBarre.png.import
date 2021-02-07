@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tableauFinMamanBebe.png-2413f57c1746da000cdb188648fa5f5e.stex"
+path="res://.import/tableauBarre.png-09bd99bfb7990b03632ac75593715e2a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/tableauFinMamanBebe.png"
-dest_files=[ "res://.import/tableauFinMamanBebe.png-2413f57c1746da000cdb188648fa5f5e.stex" ]
+source_file="res://Assets/tableauBarre.png"
+dest_files=[ "res://.import/tableauBarre.png-09bd99bfb7990b03632ac75593715e2a.stex" ]
 
 [params]
 

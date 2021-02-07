@@ -2,12 +2,18 @@ extends KinematicBody2D
 
 var velocity: Vector2 = Vector2()
 var sprite: AnimatedSprite
-var JUMP = 6000
+var JUMP = -7000
 var SPEED = 400
-var GRAVITY = 0.01
+var GRAVITY = 350
+var coll : CollisionShape2D
+var life_bar : Node2D
+
+signal lost_life()
+signal up_life()
 
 func _ready():
 	sprite = $AnimatedSprite
+	coll = $MainColl
 
 func _physics_process(delta):
 	get_input(delta)
@@ -15,9 +21,9 @@ func _physics_process(delta):
 	if !is_on_floor():
 		sprite.set_animation("jump")
 	if Input.is_action_pressed("ui_up") and is_on_floor():
-		velocity.y += -JUMP
+		velocity.y += JUMP*1.5
 	else:
-		velocity.y += SPEED
+		velocity.y += GRAVITY
 	move_and_slide(velocity, Vector2(0,-1))
 
 func get_input(delate):
@@ -34,8 +40,17 @@ func get_input(delate):
 		sprite.set_animation("idle")
 
 func _on_HintArea_body_entered(body):
-	print(body)
 	if body.name == "Chandelier":
+		body.queue_free()
+		emit_signal("lost_life")
 		print("loose life chandle")
 	if body.name == "Hole":
+		coll.set_disabled(true)
+		emit_signal("lost_life")
+		print("loose life Hole "+str(coll.disabled))
+	if body.name == "Bonus":
 		print("loose life Hole")
+		body.queue_free()
+		emit_signal("up_life")
+	if body.name == "Baby":
+		get_tree().change_scene("res://Levels/YouWin.tscn")
