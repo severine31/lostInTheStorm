@@ -21,5 +21,5 @@ func _physics_process(delta):
 				go_down()
 				
 func go_down():
-	gravity_scale = 4
+	gravity_scale = 15
 	add_force(Vector2(0,2), Vector2(0,2))

@@ -51,10 +51,10 @@ position = Vector2( 175, -50 )
 [node name="ChandelPositions" type="Node2D" parent="."]
 
 [node name="pos1" type="Position2D" parent="ChandelPositions"]
-position = Vector2( -50, -170 )
+position = Vector2( -70, -170 )
 
 [node name="pos2" type="Position2D" parent="ChandelPositions"]
-position = Vector2( 170, -170 )
+position = Vector2( 120, -170 )
 
 [node name="HolePositions" type="Node2D" parent="."]
 

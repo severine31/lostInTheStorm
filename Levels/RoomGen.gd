@@ -1,11 +1,10 @@
 extends Node2D
 
 var rng = RandomNumberGenerator.new()
-var WORLD_SIZE_MIN = 10
-var WORLD_SIZE_MAX = 20
+var WORLD_SIZE_MIN = 5
+var WORLD_SIZE_MAX = 15
 var WORLD_MAP = []
 var MAP_SPRITE: AnimatedSprite
-var CHANDELIER_NUMBER = 5
 var ROOM_SPRITES = ["left_door","right_door","two_door"]
 var HUBLO_POSITIONS : Node2D
 var CHANDLE_POSITIONS : Node2D
