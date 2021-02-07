@@ -10,7 +10,10 @@ var arr = [
 	"Please,",
 	"find the baby !",
 	"Be carefull,",
-	"boat is damaged..."
+	"boat is damaged...",
+	"If you're tired,",
+	"drink something",
+	"Good luck!"
 ]
 var text: RichTextLabel
 var captain: AnimatedSprite
@@ -37,6 +40,9 @@ func _process(delta):
 			baby.visible = true
 			baby.play("default")
 	else: 
+		get_tree().change_scene("res://Levels/MainLevels.tscn")
+
+	if Input.is_key_pressed(KEY_ENTER):
 		get_tree().change_scene("res://Levels/MainLevels.tscn")
 
 func _on_Timer_timeout():
