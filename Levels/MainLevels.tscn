@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Levels/RoomGen.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Levels/MainLevels.gd" type="Script" id=2]
 [ext_resource path="res://Entities/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/texture_type2.png" type="Texture" id=4]
+[ext_resource path="res://Assets/viePoisson.png" type="Texture" id=5]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -80,6 +81,22 @@ position = Vector2( 270, 85 )
 
 [node name="midle" type="Position2D" parent="player_pos"]
 position = Vector2( 0, 85 )
+
+[node name="Life" type="Node2D" parent="."]
+
+[node name="1" type="Sprite" parent="Life"]
+position = Vector2( 203.77, -181.237 )
+texture = ExtResource( 5 )
+
+[node name="2" type="Sprite" parent="Life"]
+position = Vector2( 216.27, -181.237 )
+texture = ExtResource( 5 )
+
+[node name="3" type="Sprite" parent="Life"]
+position = Vector2( 228.77, -181.237 )
+texture = ExtResource( 5 )
+[connection signal="lost_life" from="Player" to="." method="_on_Player_lost_life"]
+[connection signal="up_life" from="Player" to="." method="_on_Player_up_life"]
 [connection signal="on_change_level" from="RoomGen" to="." method="_on_RoomGen_on_change_level"]
 [connection signal="body_entered" from="doors/Left" to="RoomGen" method="_on_Left_body_entered"]
 [connection signal="body_entered" from="doors/Right" to="RoomGen" method="_on_Right_body_entered"]

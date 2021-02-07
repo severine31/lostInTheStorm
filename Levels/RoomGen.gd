@@ -1,7 +1,7 @@
 extends Node2D
 
 var rng = RandomNumberGenerator.new()
-var WORLD_SIZE_MIN = 5
+var WORLD_SIZE_MIN = 10
 var WORLD_SIZE_MAX = 15
 var WORLD_MAP = []
 var MAP_SPRITE: AnimatedSprite
@@ -82,7 +82,7 @@ func reset_room():
 
 func generate_world():
 	for i in range(1, rng.randi_range(WORLD_SIZE_MIN, WORLD_SIZE_MAX)):
-		randomize()
+		rng.randomize()
 		var type_room = ROOM_SPRITES[rng.randi_range(0,2)]
 		if i != 1:
 			WORLD_MAP.append(

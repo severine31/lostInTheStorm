@@ -7,7 +7,6 @@ var text_retry: Label
 func _ready():
 	main = $Main
 	text_retry = $Label
-	
 	main.visible = true
 	main.play("default")
 	main.connect("animation_finished", self, "show_text_retry")
